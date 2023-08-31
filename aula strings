@@ -1,0 +1,54 @@
+1///
+
+let array
+console.log('a. ', array)
+//undefined
+array = null
+console.log('b. ', array)
+//null
+array = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+console.log('c. ', array.length)
+//11
+let i = 0
+console.log('d. ', array[i])
+//3
+array[i+1] = 19
+console.log('e. ', array)
+//19
+const valor = array[i+6]
+console.log('f. ', valor)
+//9
+
+
+//subi num onibus em Marrocos, 27 
+const frase = prompt("Digite uma frase")
+console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length)
+//escrita do codigo
+//1.
+let seuNome = prompt("crie seu usuario")
+let seuEmail = prompt("qual seu email?")
+console.log('o email, $(seuEmail.trim()}, foi cadastrado com sucesso. Seja bem-vindo,,, $(seuNome)')
+
+//2.
+const comidas = ["carne", "fango", "peixe", "lasanha", "churrasco"];
+//a.
+console.log(comidas);
+//b.
+console.log("essas sao minhas comidas favoritas"); console.log(comidas[0]); console.log(comidas[1]); console.log(comidas[2]); console.log(comidas[3]); console.log(comidas[4]);
+//c.
+let comida = prompt("qual sua comida favorita?");
+comidas[1] = comida;
+console.log(comidas);
+
+//3.
+//a. 
+let listaDeTarefas = []
+//b. 
+listaDeTarefas = [prompt("cite 1 tarefa do seu dia a dia"), prompt("cite 1 tarefa do seu dia a dia"), prompt("cite 1 tarefa do seu dia a dia")];
+//c. 
+console.log(listaDeTarefas)
+//d. 
+let prompt2 = Number(prompt("cite o indice de uma tarefa que voce fez hoje"));
+//e. 
+listaDeTarefas.splice(prompt2,1)
+console.log(listaDeTarefas)
